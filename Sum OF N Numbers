@@ -1,0 +1,17 @@
+//Sum of N numbers
+#include<stdio.h>
+int addt(int a);
+int main(){
+	int N,sum;
+	scanf("%d\n",&N);
+	sum=addt(N);
+	printf("%d\n",sum);
+	return 0;
+}
+int addt(int k){
+  int sum=0;
+	if(k!=0)
+  sum=k+addt(k-1);
+	return (sum);
+
+}
